@@ -23,7 +23,7 @@ function KaomojiCard(props) {
     >
       <div className="card-body">
         <h5 className="card-title">{props.kaomoji}</h5>
-        <p className="card-text">{copied ? "Copied!" : props.meaning}</p>
+        <p className="card-text">{copied ? "Copied!" : null}</p>
       </div>
     </div>
   );
