@@ -8,6 +8,15 @@ function Footer(props) {
       <p>
         &copy; {year} {props.author}
       </p>
+
+      {/* add github icon and link */}
+      <a
+        href="
+      https://github.com/Sushipie/kaomoji-pedia"
+        target="_blank"
+      >
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" />
+      </a>
     </footer>
   );
 }
