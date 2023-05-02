@@ -15,11 +15,9 @@ function App() {
 
   function handleClick(event) {
     let categoryName = event.target.innerText;
-    console.log(categoryName);
 
     //in the kaomoji.js, find the obj with the same name as the button
     const obj = kaomoji.find((item) => item.name == categoryName);
-    console.log(obj);
     setCategory(obj.list);
   }
 
