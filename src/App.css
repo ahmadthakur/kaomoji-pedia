@@ -6,6 +6,12 @@ body {
   font-family: "Roboto", sans-serif;
   overflow-x: hidden;
   margin: 0;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+body::-webkit-scrollbar {
+  display: none;
 }
 
 h1 {
@@ -127,14 +133,16 @@ footer {
   text-align: center;
 }
 
+img {
+  width: 30px;
+  height: 30px;
+  object-fit: cover;
+}
+
 @media screen and (max-width: 768px) {
-  .card-collection {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 10px;
-  }
+
+
+  
 
   .button-container {
     width: 100%;
@@ -145,8 +153,20 @@ footer {
     justify-content: center;
     align-items: center;
     position: fixed;
-    bottom: 0;
+    top: 0;
+    bottom: 90%;
     padding: 10px 0;
+  }
+
+  header{
+    margin-top: 100px
+  }
+  .card-collection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
   }
 
   .card {
